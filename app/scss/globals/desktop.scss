@@ -1,0 +1,56 @@
+@use "./colors.scss" as *;
+
+@media screen and (min-width: 1440px) {
+  body {
+    /* header styling */
+    header {
+      min-width: 100vw;
+      & .header__container {
+        padding: 5.5rem 16.5rem 0rem 16.5rem;
+        & nav.header__nav {
+          flex-wrap: nowrap;
+          & .nav__logo {
+            flex: 1;
+            & img {
+              width: 100%;
+              min-width: 19.4rem;
+              min-height: 3.2rem;
+            }
+          }
+
+          & button {
+            display: none;
+          }
+
+          & ul.nav__nav-list {
+            display: flex;
+            flex-direction: row;
+            margin: 0 0 0 56rem;
+            font-size: 1.7rem;
+            opacity: 1;
+
+            & li:hover::after {
+                content: "";
+                display: block;
+                width: 40%;
+                border-bottom: 0.2rem solid $primary-white;
+                margin: 0.6rem 0 0 1.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    /* showcase styling */
+    section.showcase {
+      background-image: url(/images/desktop/image-hero.jpg);
+      padding: 22rem 2rem 0 16.5rem;
+        
+      & .showcase__content {
+          margin-right: 60rem;
+          padding: 4.3rem 3rem 1.7rem 2.5rem;
+          font-size: 5rem;
+      }
+    }
+  }
+}

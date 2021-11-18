@@ -1,2 +1,2 @@
-"use strict";console.log("hello");
+"use strict";var burger=document.querySelector("#burger"),times=document.querySelector("#times"),navList=document.querySelector("#nav-list"),header=document.querySelector("#header");burger.addEventListener("click",(function(){navList.classList.toggle("show"),burger.style.display="none",times.style.display="block",header.style.backgroundColor="black"})),times.addEventListener("click",(function(){navList.classList.toggle("show"),burger.style.display="block",times.style.display="none",header.style.backgroundColor="transparent"}));
 //# sourceMappingURL=script.js.map
