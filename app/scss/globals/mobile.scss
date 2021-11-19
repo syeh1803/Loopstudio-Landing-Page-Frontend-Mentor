@@ -65,7 +65,7 @@ body {
   }
 
   main.main {
-    margin: 7rem 2rem 0 2rem;
+    margin: 7rem 2rem 9.8rem 2rem;
     /* interactive VR styling */
     & section.main__interactive-VR {
       display: flex;
@@ -120,11 +120,11 @@ body {
         gap: 2rem;
 
         & .gallery__card {
-            padding: 4.9rem 0 0 1.7rem;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            box-shadow: 168px 0px 21px 0px rgba(0,0,0,0.47) inset;
-            cursor: pointer;
+          padding: 4.9rem 0 0 1.7rem;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          box-shadow: 168px 0px 21px 0px rgba(0, 0, 0, 0.47) inset;
+          cursor: pointer;
           &:nth-of-type(1) {
             background-image: url(/images/mobile/image-deep-earth.jpg);
           }
@@ -151,23 +151,70 @@ body {
           }
 
           & h3.card__title {
-              font-size: 2.3rem;
+            font-size: 2.3rem;
           }
         }
       }
 
       & .our-creations__button {
-         & a button {
-             display: block;
-             margin: 3rem 0 0 8rem;
-             padding: 1rem 4.5rem;
-             border: 0.199rem solid $primary-black;
-             font-family: "Alata";
-             font-size: 1.3rem;
-             letter-spacing: 0.4rem;
-             text-transform: uppercase;
-             color: $primary-black;
-         }
+        & a button {
+          display: block;
+          margin: 3rem 0 0 8rem;
+          padding: 1rem 4.5rem;
+          border: 0.199rem solid $primary-black;
+          font-family: "Alata";
+          font-size: 1.3rem;
+          letter-spacing: 0.4rem;
+          text-transform: uppercase;
+          color: $primary-black;
+        }
+      }
+    }
+  }
+
+  /* footer styling */
+  footer.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.5rem 0;
+    background-color: $primary-black;
+    text-align: center;
+
+    & .footer__left {
+      & .footer__logo img {
+        display: block;
+        width: 13.5rem;
+        height: 2.5rem;
+      }
+      & ul.footer__nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2.6rem;
+        margin: 4.2rem 0 5.2rem 0;
+      }
+    }
+
+    & .footer__right {
+      & .footer__social-media {
+        margin-bottom: 2.8rem;
+        & a:not(:first-of-type) {
+          margin-left: 1rem;
+        }
+
+        & a i {
+          font-size: 2.6rem;
+        }
+      }
+
+      & .footer__disclaimer {
+
+        & h6 {
+          font-family: "Alata";
+          font-size: 1.4rem;
+          letter-spacing: 0.05rem;
+          opacity: 0.5;
+        }
       }
     }
   }
