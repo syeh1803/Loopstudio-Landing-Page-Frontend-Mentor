@@ -28,14 +28,6 @@
             margin: 0 0 0 56rem;
             font-size: 1.7rem;
             opacity: 1;
-
-            & li:hover::after {
-              content: "";
-              display: block;
-              width: 40%;
-              border-bottom: 0.2rem solid $primary-white;
-              margin: 0.6rem 0 0 1.5rem;
-            }
           }
         }
       }
@@ -91,7 +83,7 @@
         margin-top: 18.6rem;
 
         & h1.our-creations__heading {
-         padding-bottom: 3.7rem;
+          padding-bottom: 3.7rem;
           font-size: 4.5rem;
           text-align: left;
         }
@@ -102,29 +94,29 @@
           gap: 3rem;
 
           & .gallery__card {
-              position: relative;
-              padding: 34.9rem 0 0 4.7rem;
-              box-shadow: 0px -104px 46px 0px rgba(0,0,0,0.47) inset;
-              transition: 0.5s;
+            position: relative;
+            padding: 34.9rem 0 0 4.7rem;
+            box-shadow: 0px -104px 46px 0px rgba(0, 0, 0, 0.47) inset;
+            transition: 0.5s;
 
-              &:hover {
-                  color: $primary-black;
-              }
-              
-              &::before {
-                  content: "";
-                  position: absolute;
-                  top: 0;
-                  right: 0;
-                  bottom: 0;
-                  left: 0;
-                  opacity: 0;
-                  background-color: $primary-white;
-              }
+            &:hover {
+              color: $primary-black;
+            }
 
-              &:hover::before {
-                  opacity: 0.7;
-              }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              opacity: 0;
+              background-color: $primary-white;
+            }
+
+            &:hover::before {
+              opacity: 0.7;
+            }
 
             &:nth-of-type(1) {
               background-image: url(/images/desktop/image-deep-earth.jpg);
@@ -171,6 +163,42 @@
               color: $primary-white;
               background-color: $primary-black;
             }
+          }
+        }
+      }
+    }
+
+    /* footer styling */
+    footer.footer {
+      flex-direction: row;
+      padding: 4.5rem 16rem;
+      gap: 47rem;
+
+      & .footer__left {
+        & ul.footer__nav-list {
+          flex-direction: row;
+          gap: 3.5rem;
+          margin: 3rem 0 0 0;
+        }
+      }
+
+      & .footer__right {
+        & .footer__social-media {
+          display: flex;
+          justify-content: flex-end;
+          text-align: right;
+
+          & a::before {
+            width: 80%;
+            margin: 0.6rem 0 0 0.3rem;
+          }
+        }
+
+        & .footer__disclaimer {
+          margin-top: 3.2rem;
+
+          & h6 {
+            white-space: nowrap;
           }
         }
       }
