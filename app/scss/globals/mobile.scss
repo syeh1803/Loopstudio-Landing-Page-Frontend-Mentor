@@ -197,6 +197,8 @@ body {
 
     & .footer__right {
       & .footer__social-media {
+          display: flex;
+          justify-content: center;
         margin-bottom: 2.8rem;
         & a:not(:first-of-type) {
           margin-left: 1rem;
